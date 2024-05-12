@@ -1,0 +1,205 @@
+/* Các quy tắc CSS chung cho body */
+body {
+    padding: 20px;
+    /* Đảm bảo có khoảng cách giữa nội dung và lề của màn hình */
+}
+
+.content p {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+section {
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+section .row .col-5 p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+section .num {
+    font-size: 50px;
+    font-weight: bold;
+    color: #4F4F4F;
+}
+
+.row.mb-3 .col-lg-7 img {
+    width: 100%;
+    height: 150px;
+}
+
+.project1 .row h3 {
+    font-weight: bold;
+}
+
+.project1 .row p {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.project2 .row .col-lg-3 {
+    margin-top: 10rem;
+}
+
+.project2 .row p {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.project2 img {
+    height: 100%;
+}
+
+.project2_1 {
+    height: auto;
+}
+
+.project3 .row p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+.project4 .row p{
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+}
+.project5 .row p{
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+}
+/* Media query cho các màn hình nhỏ và vừa (ví dụ: < 768px) */
+@media only screen and (max-width: 767px) {
+    body {
+        max-width: 100%;
+        /* Thiết lập max-width tối đa cho màn hình điện thoại nhỏ và vừa */
+        margin: 0;
+        /* Reset margin */
+    }
+
+    header.container {
+        padding: 20px;
+        /* Đảm bảo phần header có khoảng cách từ lề */
+    }
+
+    /* Phần tử content */
+    .content p {
+        font-size: 30px;
+    }
+
+    header nav ul li {
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    section .row .col-5 p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    section span {
+        font-size: 10px;
+    }
+
+    section .num {
+        font-size: 20px;
+    }
+
+    /* Các hình ảnh trong phần project */
+    .row.mb-3 .col-sm-12 img {
+        width: 100%;
+        height: 100px;
+    }
+
+    /* Phần tử introduction */
+    .introduction .row p {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    /* Phần tử project1 */
+    .project1 .row p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .project1_1 {
+        padding: 0 20px;
+    }
+
+    .project1_1 img {
+        width: 100%;
+    }
+
+    /* Phần tử project2 */
+    .project2 .row .col-sm-12 {
+        margin-top: 0;
+    }
+
+    .project2 .row p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .project2 .row>* {
+        padding-left: 0;
+        width: auto;
+    }
+
+    .project2 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Phần tử project3 */
+    .project3 .row div {
+        margin-top: 20px;
+    }
+
+    .project3 .col-12 img {
+        height: 150px !important;
+    }
+
+    .project3_1 .col-12 img {
+        height: 120px !important;
+    }
+
+    /* Phần tử project4 */
+    .project4 .row p{
+        font-size: 12px;
+    }
+    .project4 .row .col-lg-7{
+       padding-bottom: 10px;
+    }
+    /* Phần tử project5 */
+    .project5 .row p{
+        font-size: 12px;
+        text-align: left;
+    }
+    .project5 .col-6 img{
+        width: 170px;
+    }
+    .project5 .col-12 img{
+        width: 170px;
+        height: 200px;
+    }
+    .project5 .row .col-8 .row{
+        flex-direction: column;
+    }
+}
